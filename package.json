@@ -1,10 +1,19 @@
 {
-  "name": "prophecy-verse-video-api",
+  "name": "cloudflare-r2-upload-backend",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.20"
   },
   "devDependencies": {
-    "wrangler": "latest"
+    "@cloudflare/workers-types": "^4.20260809.0",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.30.0"
   }
 }
